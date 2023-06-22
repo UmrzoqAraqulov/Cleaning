@@ -1,0 +1,103 @@
+@use '../../sass/mixin.scss' as mixin;
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: white;
+
+}
+
+.header-menu {
+  @extend %df;
+  padding: 15px 0px;
+  color: #211F54;
+}
+
+.left {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  input{
+    display: none;
+  }
+  img {
+    width: 130px;
+    cursor: pointer;
+  }
+
+}
+
+
+
+.menu {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: 500;
+  font-size: 18px;
+  transition: .5s;
+  a:hover {
+    color: blue;
+  }
+  
+  @media (max-width:850px) {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    flex-direction: column;
+    width: 60%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: rgba(215, 214, 214, 0.950);
+    row-gap: 20px;
+    font-size: 20px;
+    z-index: 100;
+  }
+
+  position: relative;
+}
+
+.close {
+  display: none;
+  position: absolute;
+  font-size: 20px;
+  top: 15px;
+  left: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.08);
+    color: white;
+  }
+  @media (max-width:850px){
+    display: block;
+  }
+}
+
+.right {
+  font-size: 18px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  @media (max-width:500px){
+    display: none;
+  }
+}
+
+.bar {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.08);
+  }
+    @media (max-width:850px) {
+      display: block;
+    }
+}

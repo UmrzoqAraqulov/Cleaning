@@ -1,0 +1,89 @@
+@use '../../sass/mixin.scss' as mx;
+
+.connect {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px 0px;
+  gap: 10px;
+}
+
+.connect h3 {
+  color: white;
+}
+
+#covid {
+  @extend %df;
+  background: #211F54;
+  border-radius: 25px;
+  color: white;
+  padding: 15px;
+
+}
+
+.left {
+  width: 40%;
+
+  img {
+    width: 100%;
+  }
+
+  @media (max-width:930px) {
+    display: none;
+  }
+}
+
+.right {
+  width: 55%;
+  padding-right: 60px;
+
+  h2 {
+    font-size: 44px;
+    padding: 10px 0px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  @media (max-width:930px) {
+    width: 100%;
+    padding: 30px;
+
+    h2 {
+      font-size: 42px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width:620px) {
+    h2 {
+      font-size: 38px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    h4 {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width:450px) {
+    padding: 10px;
+    h2 {
+      font-size: 34px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    h4 {
+      font-size: 14px;
+    }
+  }
+}

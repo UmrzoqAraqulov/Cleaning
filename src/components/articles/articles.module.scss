@@ -1,0 +1,14 @@
+@use '../../sass/mixin.scss' as mx;
+
+.title {
+  @extend %df;
+  padding: 60px 0px 20px;
+}
+
+.cards {
+  @extend %df;
+
+  @media(max-width:725px) {
+    flex-direction: column;
+  }
+}

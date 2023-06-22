@@ -1,0 +1,88 @@
+@use '../../sass/mixin.scss' as mx;
+
+.home {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 10px 0px;
+  @extend %df;
+  padding-left: 100px;
+
+  @media (max-width:956px) {
+    padding-left: 80px;
+    padding-top: 70px;
+  }
+
+  @media (max-width:812px) {
+    padding-top: 80px;
+    padding-left: 60px;
+  }
+
+  @media (max-width:600px) {
+    padding: 80px 20px 20px;
+  }
+}
+
+.right {
+  width: 55%;
+
+  img {
+    width: 100%;
+  }
+
+  @media (max-width:600px) {
+    display: none;
+  }
+}
+
+.home-left {
+  width: 45%;
+
+  h1 {
+    font-size: 60px;
+    color: #211F54;
+  }
+
+  @media (max-width:1100px) {
+    h1 {
+      font-size: 50px;
+    }
+  }
+
+  @media (max-width:892px) {
+    h1 {
+      font-size: 40px;
+    }
+
+    p {
+      font-size: 17px;
+    }
+  }
+
+  @media (max-width:600px) {
+    padding: 30px 0px;
+    width: 100%;
+    background: linear-gradient(100deg, rgba(255, 255, 255, 0.534), rgba(255, 255, 255, 0.598)), url(../../assets/images/home.png);
+    background-position: center;
+    background-size: cover;
+    background-position-y: -50px;
+    h1 {
+      text-align: center;
+    }
+  }
+
+
+}
+
+.text {
+  font-size: 21px;
+  color: #6E7191;
+  padding: 15px 0px;
+  letter-spacing: 0.8px;
+}
+
+.connect {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  gap: 10px;
+}

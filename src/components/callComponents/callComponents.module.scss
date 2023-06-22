@@ -1,0 +1,33 @@
+.call{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  @media (max-width:929px){
+    order: 1;
+  }
+  cursor: pointer;
+  img{
+    width: 60px;
+  }
+  p{
+    font-size: 15px;
+    color: #6E7191;
+  }
+  h3{
+    color: #211F54;
+    font-size: 22px;
+  }
+     @media (max-width:1100px) {
+       p{
+        font-size: 14px;
+       }
+       h3{
+        font-size: 20px;
+       }
+     }
+     @media (max-width:600px) {
+       h3{
+        font-size: 18px;
+       }
+     }
+}

@@ -1,0 +1,41 @@
+.about{
+  padding: 30px 0px;
+  h2{
+    text-align: center;
+    font-size: 48px;
+    color: #211F54;
+  }
+  @media (max-width:550px){
+    h2{
+      font-size: 40px;
+    }
+  }
+}
+
+.title {
+  width: 70%;
+  margin: 0 auto;
+  color: #6E7191;
+  font-size: 21px;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.btns{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cards{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0px 0px 30px;
+  @media (max-width:1100px){
+    gap: 20px;
+    justify-content: center;
+  }
+}
