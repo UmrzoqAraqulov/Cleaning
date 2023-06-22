@@ -1,6 +1,6 @@
 .card {
   width: 45%;
-
+  z-index: -1;
   img {
     width: 100%;
     border-radius: 5px;
@@ -27,7 +27,6 @@
   transform: translateY(-50px);
   width: 85%;
   margin: 0 auto;
-
   h2 {
     color: #211F54;
     font-size: 22px;
